@@ -22,4 +22,8 @@
         animation: progress-loading 2s infinite ease-in-out !important;
     }
 
+    @keyframes mymove {
+        50% {background-position-x: 2000px;}
+      }
+
 };

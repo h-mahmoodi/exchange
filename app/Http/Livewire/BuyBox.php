@@ -58,7 +58,7 @@ class BuyBox extends Component
         // ])->get("https://api.apilayer.com/exchangerates_data/convert?to=IRR&from=USD&amount=1")->collect()['info']['rate'];
         // $this->IRR_live_price=$IRR_response;
 
-        $this->IRR_live_price=4200;
+        $this->IRR_live_price=35000;
     }
 
 
@@ -69,6 +69,7 @@ class BuyBox extends Component
     }
 
     public function getTotalPrice(){
+        sleep(1);
         $total=$this->USDT_amount * $this->USDT_live_price * $this->IRR_live_price;
         $total=$total + (($total*2.5)/100);
         $this->TotalPrice = $total;
