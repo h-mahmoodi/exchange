@@ -1,14 +1,11 @@
 <div>
     <form wire:submit.prevent="submit">
-        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-slate-800">
+        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-slate-800 ">
             <div class="card-body">
-                <div class="text-xl">
-                    خرید تتر USDT
-                </div>
-                <hr>
+
             <div class="form-control">
                 <label class="label flex">
-                <span class="label-text text-sm text-gray-400">مقدار تتر را مشحص کنید</span>
+                <span class="label-text text-sm text-gray-400">مقدار تتر مورد نیاز خود را مشحص کنید</span>
                 </label>
                 <input type="text" placeholder="USDT Amount" class=" text-lg bg-gray-100  border-2 rounded-lg text-gray-800 border-none p-3
                 @error('USDT_amount')
@@ -46,7 +43,7 @@
 
             <div class="form-control">
                 <button class="btn btn-primary text-base font-medium flex justify-center items-center" wire:loading.attr="disabled" type="submit">
-                    <span>ادامه مراحل خرید USDT</span>
+                    <span>ادامه فرآیند خرید </span>
                     {{-- <img class="w-10" src="{{asset('assets/svg/next.svg')}}" alt=""> --}}
                 </button>
             </div>

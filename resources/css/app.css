@@ -23,7 +23,7 @@
     }
 
     @keyframes mymove {
-        50% {background-position-x: 2000px;}
+        50% {background-position-x: 1000px;}
       }
 
 };
