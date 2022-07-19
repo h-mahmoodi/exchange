@@ -3,46 +3,88 @@
 @section('body')
 
 <div class="bg-slate-900">
-    <div class=" container w-full mx-auto px-2  py-5 ">
+
+
+<div class=" container w-full mx-auto my-5 ">
+    <div class="p-4 bg-slate-800 rounded-xl">
+        <div class="text-sm">
+            <ul class="flex gap-1 text-gray-400 items-center">
+                <li>
+                    <span class="text-primary">پنل کاربری</span>
+                </li>
+                <li class="flex items-center justify-center text-gray-500">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>                    </li>
+                <li>
+                    <span>داشبورد</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <div class=" container w-full mx-auto my-5 ">
       <div class="relative flex items-center justify-between bg-slate-800 rounded-xl p-4">
-        <div class="flex flex-col gap-2 text-gray-300 ">
-            <div class="text-xl text-gray-300 ">
-                پنل کاربری
+
+
+
+
+        <div class="flex items-center gap-3">
+            <div class="radial-progress bg-slate-900 text-slate-400 border-8 border-slate-900" style="--value:70; --size:5rem; --thickness: 8px;">
+                <span class="text-slate-400">70%</span>
             </div>
-            <div class="text-sm">
-                <span>خوش آمدی </span>
-                {{-- <span>{{auth()->user()->name}}</span> --}}
+
+            <div class="flex flex-col gap-2 text-gray-300 ">
+                <div class="text-2xl text-slate-300 ">
+                    <span>خوش آمدی </span>
+                    {{-- <span>{{auth()->user()->name}}</span> --}}
+                    <span>حسام عزیز</span>
+
+                </div>
+                <div class="text-xs text-slate-400">
+                    70% اطلاعات کاربری تکمیل شده است
+                </div>
             </div>
         </div>
 
         <div class="flex gap-8 items-center justify-center ">
-          <div class="hidden sm:block sm:ml-6">
-            <div class="flex gap-2 ">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex gap-2 ">
 
-              <div class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-base font-medium flex gap-5">
-                <span>تعداد  آگهی </span>
-                <span>100</span>
+
+                <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                    <span class="flex gap-2 items-center text-2xl text-slate-300">
+                        <span>10%</span>
+                    </span>
+                    <div class="text-gray-400 flex flex-col items-center justify-center gap-2">
+                        <span  class="text-slate-400 text-lg">درصد تخفیف ثابت </span>
+                        <a href="#" class="text-xs text-slate-400 bg-slate-900 p-2 rounded-xl">دریافت تخفیف بیشتر       </a>
+                    </div>
+                </div>
+
+                <div class="divider divider-horizontal"></div>
+
+                <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                    <span class="flex gap-2 items-center  text-2xl text-slate-300">
+                        <span> 2،000،000 تومان </span>
+                    </span>
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <span class="text-slate-400 text-lg">موجودی کیف پول  </span>
+                        <a href="#" class="text-xs text-slate-400 bg-slate-900 p-2 rounded-xl">مشاهده کیف پول     </a>
+                    </div>
+                </div>
+
+
               </div>
-
-
-              <div class="bg-slate-800 hover:bg-orange-600 transition-all duration-500 text-white px-3 py-2 rounded-md text-base font-medium flex gap-5">
-                <span>موجودی کیف پول  </span>
-                <span>35،000</span>
-              </div>
-
-
-
-
-
             </div>
           </div>
-        </div>
 
       </div>
     </div>
 
 
 </div>
+
 
 
 

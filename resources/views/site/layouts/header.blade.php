@@ -24,7 +24,7 @@
     </div>
 </div>
 
-  <div class="flex justify-between items-center py-3 z-50 container mx-auto">
+  <div class="flex justify-between items-center py-6 z-50 container mx-auto">
 
     <div class="flex items-center gap-10">
 
@@ -67,4 +67,79 @@
         <button class="btn btn-primary">ورود / عضویت</button>
     </div>
 
+  </div>
+
+  <div class=" container w-full mx-auto p-2  ">
+    <div class="relative flex items-center justify-between bg-slate-900 rounded-xl p-4">
+        <div class="text-lg text-gray-300 flex flex-col gap-1">
+            <div>
+                سه شنبه 28 تیر
+            </div>
+            <div class="te bxt-sm">
+                USDT Tether Rate
+            </div>
+        </div>
+      <div class="flex gap-8 items-center justify-center ">
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex gap-2 ">
+
+            <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                <span class="flex gap-2 items-center">
+                    <span>1 دقیقه پیش</span>
+                </span>
+              <span class="text-gray-400">بروز شده در</span>
+            </div>
+
+            <div class="divider divider-horizontal"></div>
+
+            <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                <span class="flex gap-2 items-center">
+                    <span>35،020</span>
+                    <span><ion-icon name="arrow-down-outline" class="text-lg"></ion-icon></span>
+                </span>
+              <span class="text-gray-400">نرخ لحظه ای   </span>
+            </div>
+
+            <div class="divider divider-horizontal"></div>
+
+
+
+
+            <div class=" transition-all duration-500 text-emerald-500 px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                <span class="flex gap-2 items-center">
+                    <span>+1.2 %</span>
+                    <span><ion-icon name="arrow-up-outline" class="text-lg "></ion-icon></span>
+                </span>
+              <span class="text-gray-400">تغییرات   </span>
+            </div>
+
+            <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                <span class="flex gap-2 items-center">
+                    <span>35،020</span>
+                    <span><ion-icon name="arrow-up-outline" class="text-lg"></ion-icon></span>
+                </span>
+              <span class="text-gray-400">بالاترین   </span>
+            </div>
+
+
+            <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
+                <span class="flex gap-2 items-center">
+                    <span>35،020</span>
+                    <span><ion-icon name="arrow-down-outline" class="text-lg"></ion-icon></span>
+                </span>
+              <span class="text-gray-400">پایین ترین   </span>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>

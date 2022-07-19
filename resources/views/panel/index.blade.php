@@ -9,26 +9,30 @@
 
 
 
-<div class="bg-gray-100">
-    <div class="container mx-auto my-3">
+<div class=" bg-slate-800 w-full p-2 rounded-box">
+        <div class="p-3 flex flex-col gap-3">
 
-
-
-                    {{-- <div class="grid grid-cols-4 gap-5">
-                        @for ($i=0;$i<10;$i++)
-
-                            <x-product.instagram-card2/>
-                        @endfor
-                    </div> --}}
-
-
-
-
-
+            <div class="w-full" dir="ltr">
+                <ul class="steps w-full">
+                    <li class="step step-primary">
+                        <a href=""  class=" step-primary">
+                            <span class="text-sm">تایید شماره همراه</span>
+                        </a>
+                    </li>
+                    <li class="step">
+                        <a href=""  class=" step-primary">
+                            <span class="text-sm">تایید شماره همراه</span>
+                        </a>
+                    </li>
+                    <li class="step">Choose plan</li>
+                    <li class="step">Purchase</li>
+                    <li class="step">Receive Product</li>
+                </ul>
+            </div>
 
         </div>
-    </div>
 </div>
+
 
 
 

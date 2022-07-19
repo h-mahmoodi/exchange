@@ -3,7 +3,7 @@
     <ul class="menu bg-slate-800 w-full p-2 rounded-box">
         <li>
           <a class="@if (request()->routeIs('admin.index'))
-            bg-slate-900 text-primary
+            bg-slate-900 text-slate-300
           @endif text-sm" href={{route('admin.index')}}>
           <ion-icon name="home-outline" class="text-3xl"></ion-icon>
           داشبورد
@@ -16,7 +16,7 @@
           <a href="{{route('panel.index')}}"
           class="@if (request()->routeIs('panel.*')) bg-slate-900 text-primary  @endif text-sm">
             <ion-icon name="reader-outline"  class="text-3xl"></ion-icon>
-         فروش پیج اینستاگرام
+         تراکنش ها
           </a>
         </li>
         {{-- <li>
@@ -28,19 +28,21 @@
           </li> --}}
 
 
-          <li>
-            <a href="{{route('admin.index')}}"
-            class="@if (request()->routeIs('admin.*')) bg-gray-800 text-primary @endif text-sm" >
-            <ion-icon name="chatbox-ellipses-outline" class="text-3xl"></ion-icon>
-                پیام های دریافتی
-            </a>
-          </li>
+
 
           <li>
             <a href="{{route('admin.index')}}"
             class="@if (request()->routeIs('admin.*')) bg-gray-800 text-white @endif text-sm">
             <ion-icon name="wallet-outline" class="text-3xl"></ion-icon>
                 کیف پول
+            </a>
+          </li>
+
+          <li>
+            <a href="{{route('admin.index')}}"
+            class="@if (request()->routeIs('admin.1.*')) bg-gray-800 text-primary @endif text-sm" >
+            <ion-icon name="chatbox-ellipses-outline" class="text-3xl"></ion-icon>
+                پیام های دریافتی
             </a>
           </li>
 

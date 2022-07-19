@@ -26,4 +26,12 @@
         50% {background-position-x: 1000px;}
       }
 
+      .step:before{
+        background-color:#0f172a!important;
+      }
+
+      .step:after{
+        background-color:#0f172a;
+      }
+
 };
