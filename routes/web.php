@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Panel\PanelController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/',[SiteController::class,'index'])->name('site.index');
+
+Route::get('/panel',[PanelController::class,'index'])->name('panel.index');
+
+Route::get('/admin',[PanelController::class,'index'])->name('admin.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

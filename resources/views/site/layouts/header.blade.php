@@ -1,8 +1,26 @@
 
 
 <div class="py-5 px-3 bg-slate-900">
-    <div class="text-sm">
-         صرافی آنلاین دیجی یو اس دی تی (Digi USDT) | اولین سامانه تخصصی خرید و فروش ارز دیجیتال تتر (تتر  Tether)
+    <div class="flex justify-between items-center container m-auto">
+        <div class="text-sm">
+          سامانه تخصصی خرید و فروش ارز دیجیتال تتر (Tether | USDT)
+       </div>
+       <div class="text-sm flex gap-3">
+        {{-- <div>
+            بروز شده در 30 ثانیه پیش
+        </div> --}}
+            <div class="flex gap-3">
+                <span class="flex items-center gap-1">
+                    <span>قیمت فروش : 32،300 </span>
+                    <span><ion-icon name="arrow-up-outline" class="text-emerald-500"></ion-icon></span>
+                </span>
+                <span class="flex items-center gap-1">
+                    <span>قیمت خرید : 31،100 تومان</span>
+                    <span><ion-icon name="arrow-down-outline" class="text-red-500"></ion-icon></span>
+                </span>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -12,8 +30,7 @@
 
         <div>
             <a class=" text-xl flex flex-col items-center">
-                <span class="font-bold text-2xl">Digi USDT</span>
-                <span class="text-sm">خرید و فروش تتر</span>
+                <span class="font-bold text-3xl">Digi USDT</span>
             </a>
         </div>
 

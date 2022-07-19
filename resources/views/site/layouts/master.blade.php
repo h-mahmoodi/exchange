@@ -17,8 +17,17 @@
         @yield('body')
     </div>
 
-    <div>
-        @include('site.layouts.footer')
+    <div class="bg-slate-800 py-5">
+        <div class="container mx-auto">
+            قیمن و نومودار های نحظه ای
+        </div>
+    </div>
+
+    <div class="bg-slate-900">
+        <div class="container mx-auto py-10">
+            @include('site.layouts.footer')
+        </div>
+
     </div>
 
     <div>
