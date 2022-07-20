@@ -69,8 +69,8 @@
 
   </div>
 
-  <div class=" container w-full mx-auto p-2  ">
-    <div class="relative flex items-center justify-between bg-slate-900 rounded-xl p-4">
+  <div class=" container w-full mx-auto p-2 ">
+    <div class="relative flex items-center justify-between bg-slate-900 rounded-xl p-4 mb-3">
         <div class="text-lg text-gray-300 flex flex-col gap-1">
             <div>
                 سه شنبه 28 تیر

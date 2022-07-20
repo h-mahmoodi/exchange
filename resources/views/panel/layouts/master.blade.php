@@ -24,14 +24,24 @@
 
 
     <div class=" container w-full mx-auto my-5 ">
-      <div class="relative flex items-center justify-between bg-slate-800 rounded-xl p-4">
+      <div class="relative flex items-center justify-between bg-slate-800 rounded-xl p-5">
 
 
 
 
         <div class="flex items-center gap-3">
-            <div class="radial-progress bg-slate-900 text-slate-400 border-8 border-slate-900" style="--value:70; --size:5rem; --thickness: 8px;">
+            {{-- <div class="radial-progress bg-slate-900 text-slate-500 border-8 border-slate-900 rounded-lg" style="--value:70; --size:5rem; --thickness: 8px;">
                 <span class="text-slate-400">70%</span>
+            </div> --}}
+
+            <div class="bg-slate-900 w-40 p-5 rounded-xl">
+                <div class="flex flex-col items-center text-slate-300">
+                    <div class="text-4xl">10/100</div>
+                    <div class="text-slate-400 text-base flex items-center justify-center gap-2 ">
+                        <ion-icon name="diamond-outline" class="text-3xl"></ion-icon>
+                        <span>امتیاز کاربری</span>
+                    </div>
+                </div>
             </div>
 
             <div class="flex flex-col gap-2 text-gray-300 ">
@@ -41,9 +51,9 @@
                     <span>حسام عزیز</span>
 
                 </div>
-                <div class="text-xs text-slate-400">
+                {{-- <div class="text-xs text-slate-400">
                     70% اطلاعات کاربری تکمیل شده است
-                </div>
+                </div> --}}
             </div>
         </div>
 
@@ -57,7 +67,7 @@
                         <span>10%</span>
                     </span>
                     <div class="text-gray-400 flex flex-col items-center justify-center gap-2">
-                        <span  class="text-slate-400 text-lg">درصد تخفیف ثابت </span>
+                        <span  class="text-slate-400 text-lg">درصد تخفیف شما </span>
                         <a href="#" class="text-xs text-slate-400 bg-slate-900 p-2 rounded-xl">دریافت تخفیف بیشتر       </a>
                     </div>
                 </div>
