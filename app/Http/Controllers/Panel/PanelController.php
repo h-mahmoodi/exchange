@@ -10,4 +10,8 @@ class PanelController extends Controller
     public function index(){
         return view('panel.index');
     }
+
+    public function history(){
+        return view('panel.history');
+    }
 }

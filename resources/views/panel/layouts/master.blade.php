@@ -5,26 +5,10 @@
 <div class="bg-slate-900">
 
 
-<div class=" container w-full mx-auto my-5 ">
-    <div class="p-4 bg-slate-800 rounded-xl">
-        <div class="text-sm">
-            <ul class="flex gap-1 text-gray-400 items-center">
-                <li>
-                    <span class="text-primary">پنل کاربری</span>
-                </li>
-                <li class="flex items-center justify-center text-gray-500">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>                    </li>
-                <li>
-                    <span>داشبورد</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 
 
     <div class=" container w-full mx-auto my-5 ">
-      <div class="relative flex items-center justify-between bg-slate-800 rounded-xl p-5">
+      <div class="relative flex items-center justify-between bg-gray-800 rounded-xl p-5">
 
 
 
@@ -34,11 +18,11 @@
                 <span class="text-slate-400">70%</span>
             </div> --}}
 
-            <div class="bg-slate-900 w-40 p-5 rounded-xl">
-                <div class="flex flex-col items-center text-slate-300">
+            <div class="bg-gray-900 w-40 py-3 px-5 rounded-xl">
+                <div class="flex flex-col items-center text-slate-300 gap-2">
                     <div class="text-4xl">10/100</div>
-                    <div class="text-slate-400 text-base flex items-center justify-center gap-2 ">
-                        <ion-icon name="diamond-outline" class="text-3xl"></ion-icon>
+                    <div class="text-slate-400 text-base flex items-center text-base justify-center gap-2 ">
+                        <ion-icon name="diamond" class="text-3xl"></ion-icon>
                         <span>امتیاز کاربری</span>
                     </div>
                 </div>
@@ -47,13 +31,11 @@
             <div class="flex flex-col gap-2 text-gray-300 ">
                 <div class="text-2xl text-slate-300 ">
                     <span>خوش آمدی </span>
-                    {{-- <span>{{auth()->user()->name}}</span> --}}
                     <span>حسام عزیز</span>
-
                 </div>
-                {{-- <div class="text-xs text-slate-400">
+                <div class="text-sm text-slate-400">
                     70% اطلاعات کاربری تکمیل شده است
-                </div> --}}
+                </div>
             </div>
         </div>
 
@@ -68,7 +50,10 @@
                     </span>
                     <div class="text-gray-400 flex flex-col items-center justify-center gap-2">
                         <span  class="text-slate-400 text-lg">درصد تخفیف شما </span>
-                        <a href="#" class="text-xs text-slate-400 bg-slate-900 p-2 rounded-xl">دریافت تخفیف بیشتر       </a>
+                        <a href="#" class="flex items-center gap-3 text-sm text-slate-400 bg-slate-900 hover:bg-gray-900 py-2 px-4 rounded-xl hover:scale-95 transition-all duration-300">
+                            <ion-icon name="diamond" class="text-3xl"></ion-icon>
+                            <span> تخفیف بیشتر</span>
+                        </a>
                     </div>
                 </div>
 
@@ -80,8 +65,10 @@
                     </span>
                     <div class="flex flex-col items-center justify-center gap-2">
                         <span class="text-slate-400 text-lg">موجودی کیف پول  </span>
-                        <a href="#" class="text-xs text-slate-400 bg-slate-900 p-2 rounded-xl">مشاهده کیف پول     </a>
-                    </div>
+                        <a href="#" class="flex items-center gap-3 text-sm text-slate-400 bg-slate-900 hover:bg-gray-900 py-2 px-4  rounded-xl hover:scale-95 transition-all duration-300">
+                            <ion-icon name="wallet" class="text-3xl"></ion-icon>
+                            <span> کیف پول </span>
+                        </a>                    </div>
                 </div>
 
 
@@ -91,6 +78,9 @@
 
       </div>
     </div>
+
+
+
 
 
 </div>

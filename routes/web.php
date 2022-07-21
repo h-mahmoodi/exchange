@@ -21,7 +21,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[SiteController::class,'index'])->name('site.index');
 
-Route::get('/panel',[PanelController::class,'index'])->name('panel.index');
+
+//panel
+
+Route::prefix('panel')->namespace('Panel')->group(function(){
+    Route::get('/',[PanelController::class,'index'])->name('panel.index');
+    Route::get('/history',[PanelController::class,'history'])->name('panel.history');
+
+});
 
 Route::get('/admin',[PanelController::class,'index'])->name('admin.index');
 

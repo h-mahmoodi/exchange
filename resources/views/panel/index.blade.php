@@ -10,6 +10,25 @@
 
 
 <div class=" bg-slate-800 w-full p-2 rounded-box">
+
+    <div class=" p-3 ">
+        <div class="p-4 bg-slate-900 rounded-xl">
+            <div class="text-sm">
+                <ul class="flex gap-1 text-gray-400 items-center">
+                    <li>
+                        <span>پنل کاربری</span>
+                    </li>
+                    <li class="flex items-center justify-center text-gray-500">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>                    </li>
+                    <li>
+                        <span class="text-primary">داشبورد</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
         <div class="p-3 flex flex-col gap-5">
 
             <div class="grid grid-cols-4 gap-5">
@@ -36,7 +55,7 @@
                     <div class="flex items-center text-slate-400">
                         <span>تایید قوانین سایت  </span>
                     </div>
-                    <div class=" flex items-center gap-1 text-sm bg-slate-800 px-4 py-2 rounded-xl">
+                    <div class=" flex items-center gap-1 text-sm bg-slate-800 px-4 py-2 rounded-xl text-slate-400">
                         <span>انجام نشده</span>
                     </div>
                 </div>
@@ -56,7 +75,7 @@
                     <div class="flex items-center text-slate-400">
                         <span>احراز هویت فردی  </span>
                     </div>
-                    <div class=" flex items-center gap-1 text-sm bg-slate-800 px-4 py-2 rounded-xl">
+                    <div class=" flex items-center gap-1 text-sm bg-slate-800 px-4 py-2 rounded-xl text-slate-400">
                         <span>انجام شده</span>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
     <ul class="menu bg-slate-800 w-full p-5 rounded-box">
         <li>
           <a class="@if (request()->routeIs('admin.index'))
-            bg-slate-900  flex items-center text-primary
+            bg-gray-900  flex items-center
           @endif text-base text-slate-300" href={{route('admin.index')}}>
           <ion-icon name="id-card-outline" class="text-4xl"></ion-icon>
           <span>داشبورد</span>
@@ -29,9 +29,9 @@
 
         <li>
           <a href="{{route('panel.index')}}"
-          class="@if (request()->routeIs('panel.*')) bg-slate-900 text-primary  @endif text-base text-slate-300">
+          class="@if (request()->routeIs('panel.*')) bg-slate-900  @endif text-base text-slate-300">
             <ion-icon name="reader-outline"  class="text-4xl"></ion-icon>
-            تراکنش ها
+            تاریخچه معاملات
           </a>
         </li>
         {{-- <li>
