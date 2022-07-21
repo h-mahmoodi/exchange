@@ -8,7 +8,7 @@
 
 
     <div class=" container w-full mx-auto my-5 ">
-      <div class="relative flex items-center justify-between bg-gray-800 rounded-xl p-5">
+      <div class="relative flex items-center justify-between bg-slate-800 rounded-xl p-5">
 
 
 
@@ -60,15 +60,24 @@
                 <div class="divider divider-horizontal"></div>
 
                 <div class=" transition-all duration-500 text-white px-3 py-2 rounded-md text-sm  flex flex-col justify-center items-center">
-                    <span class="flex gap-2 items-center  text-2xl text-slate-300">
-                        <span> 2،000،000 تومان </span>
-                    </span>
                     <div class="flex flex-col items-center justify-center gap-2">
-                        <span class="text-slate-400 text-lg">موجودی کیف پول  </span>
-                        <a href="#" class="flex items-center gap-3 text-sm text-slate-400 bg-slate-900 hover:bg-gray-900 py-2 px-4  rounded-xl hover:scale-95 transition-all duration-300">
-                            <ion-icon name="wallet" class="text-3xl"></ion-icon>
-                            <span> کیف پول </span>
-                        </a>                    </div>
+
+                        <a href="#" class="flex justify-between items-center gap-5 text-sm text-slate-400 bg-slate-900 hover:bg-gray-900 py-2 px-4  rounded-xl hover:scale-95 transition-all duration-300">
+                            <div class="flex flex-col">
+                                <span class="text-sm">Toman / تومان</span>
+                                <span class="text-2xl text-slate-400"> 2,000,000</span>
+                            </div>
+                            <ion-icon name="wallet" class="text-5xl"></ion-icon>
+                        </a>
+
+                        <a href="#" class="w-full flex justify-between items-center gap-3 text-sm text-slate-400 bg-slate-900 hover:bg-gray-900 py-2 px-4  rounded-xl hover:scale-95 transition-all duration-300">
+                            <div class="flex flex-col text-2xl">
+                                <span class="text-sm">USDT / تتر</span>
+                                <span> 153</span>
+                            </div>
+                            <ion-icon name="wallet" class="text-5xl"></ion-icon>
+                        </a>
+                    </div>
                 </div>
 
 

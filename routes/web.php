@@ -27,6 +27,7 @@ Route::get('/',[SiteController::class,'index'])->name('site.index');
 Route::prefix('panel')->namespace('Panel')->group(function(){
     Route::get('/',[PanelController::class,'index'])->name('panel.index');
     Route::get('/history',[PanelController::class,'history'])->name('panel.history');
+    Route::get('/wallet',[PanelController::class,'wallet'])->name('panel.wallet');
 
 });
 

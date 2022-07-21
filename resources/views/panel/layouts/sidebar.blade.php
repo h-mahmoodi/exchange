@@ -2,9 +2,9 @@
 
     <ul class="menu bg-slate-800 w-full p-5 rounded-box">
         <li>
-          <a class="@if (request()->routeIs('admin.index'))
+          <a class="@if (request()->routeIs('panel.index'))
             bg-gray-900  flex items-center
-          @endif text-base text-slate-300" href={{route('admin.index')}}>
+          @endif text-base text-slate-300" href={{route('panel.index')}}>
           <ion-icon name="id-card-outline" class="text-4xl"></ion-icon>
           <span>داشبورد</span>
           </a>
@@ -28,8 +28,8 @@
           </li> --}}
 
         <li>
-          <a href="{{route('panel.index')}}"
-          class="@if (request()->routeIs('panel.*')) bg-slate-900  @endif text-base text-slate-300">
+          <a href="{{route('panel.history')}}"
+          class="@if (request()->routeIs('panel.history')) bg-slate-900  @endif text-base text-slate-300">
             <ion-icon name="reader-outline"  class="text-4xl"></ion-icon>
             تاریخچه معاملات
           </a>
@@ -46,8 +46,8 @@
 
 
           <li>
-            <a href="{{route('admin.index')}}"
-            class="@if (request()->routeIs('admin.2*')) bg-slate-900 @endif text-base text-slate-300">
+            <a href="{{route('panel.wallet')}}"
+            class="@if (request()->routeIs('admin.wallet')) bg-slate-900 @endif text-base text-slate-300">
             <ion-icon name="wallet-outline" class="text-3xl"></ion-icon>
                 کیف پول
             </a>

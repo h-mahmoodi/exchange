@@ -14,4 +14,9 @@ class PanelController extends Controller
     public function history(){
         return view('panel.history');
     }
+
+    public function wallet(){
+        return view('panel.wallet');
+    }
+
 }
