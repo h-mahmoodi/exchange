@@ -63,13 +63,14 @@ class BuyBox extends Component
 
 
     public function getUSDT(){
-        // $USDT_response=Http::get('https://api.blockchain.com/v3/exchange/tickers/USDT-USD')->collect()['last_trade_price'];
+        // $USDT_response=Http::get('https://api.blockchain.com/v3/exchange/tickers/USDT-USD');
+        // dd($USDT_response);
         // $this->USDT_live_price=$USDT_response;
         $this->USDT_live_price=1;
     }
 
     public function getTotalPrice(){
-        sleep(1);
+        // sleep(1);
         $total=$this->USDT_amount * $this->USDT_live_price * $this->IRR_live_price;
         $total=$total + (($total*2.5)/100);
         $this->TotalPrice = $total;

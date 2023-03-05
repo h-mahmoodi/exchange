@@ -1276,9 +1276,34 @@ html {
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
   border-radius: var(--rounded-btn, 0.5rem);
 }
+.input-group {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
 .input-group > *, 
   .input-group > .input {
   border-radius: 0px;
+}
+.input-group :where(span) {
+  display: flex;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.input-group :first-child {
+  border-top-left-radius: var(--rounded-btn, 0.5rem);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--rounded-btn, 0.5rem);
+  border-bottom-right-radius: 0;
+}
+.input-group :last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--rounded-btn, 0.5rem);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: var(--rounded-btn, 0.5rem);
 }
 .link {
   cursor: pointer;
@@ -1809,6 +1834,9 @@ body[dir="rtl"] .checkbox:checked,
 }
 .input[list]::-webkit-calendar-picker-indicator {
   line-height: 1em;
+}
+.input-bordered {
+  --tw-border-opacity: 0.2;
 }
 .input:focus {
   outline: 2px solid hsla(var(--bc) / 0.2);
@@ -2469,11 +2497,11 @@ body[dir="rtl"] .checkbox:checked,
 .left-0 {
   left: 0px;
 }
-.-top-40 {
-  top: -10rem;
-}
 .right-0 {
   right: 0px;
+}
+.-top-40 {
+  top: -10rem;
 }
 .top-4 {
   top: 1rem;
@@ -2908,10 +2936,6 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
-.bg-emerald-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
-}
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -2971,17 +2995,17 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
-.bg-emerald-300 {
+.bg-emerald-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(110 231 183 / var(--tw-bg-opacity));
+  background-color: rgb(6 95 70 / var(--tw-bg-opacity));
 }
-.bg-emerald-100 {
+.bg-slate-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
-.bg-emerald-200 {
+.bg-slate-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 .fill-current {
   fill: currentColor;
@@ -3072,9 +3096,9 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-56 {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -3141,17 +3165,17 @@ body[dir="rtl"] .checkbox:checked,
 .text-base {
   font-size: 1rem;
 }
-.text-xs {
-  font-size: .75rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-}
 .text-2xl {
   font-size: 1.5rem;
 }
 .text-5xl {
   font-size: 3rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+}
+.text-xs {
+  font-size: .75rem;
 }
 .text-6xl {
   font-size: 4rem;
@@ -3230,21 +3254,21 @@ body[dir="rtl"] .checkbox:checked,
   --tw-text-opacity: 1;
   color: hsl(var(--p) / var(--tw-text-opacity));
 }
-.text-emerald-600 {
+.text-slate-400 {
   --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
 .text-base-content {
   --tw-text-opacity: 1;
   color: hsl(var(--bc) / var(--tw-text-opacity));
+}
+.text-emerald-600 {
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
 }
 .text-gray-200 {
   --tw-text-opacity: 1;
@@ -3290,17 +3314,9 @@ body[dir="rtl"] .checkbox:checked,
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
-.text-emerald-800 {
+.text-slate-900 {
   --tw-text-opacity: 1;
-  color: rgb(6 95 70 / var(--tw-text-opacity));
-}
-.text-emerald-700 {
-  --tw-text-opacity: 1;
-  color: rgb(4 120 87 / var(--tw-text-opacity));
-}
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;

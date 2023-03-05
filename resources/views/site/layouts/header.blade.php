@@ -38,7 +38,7 @@
             <div class="flex-none">
                 <ul class="menu menu-horizontal p-0">
                   <li><a>خرید تتر (USDT)</a></li>
-                  <li><a>فروش تتر (USDT)</a></li>
+                  {{-- <li><a>فروش تتر (USDT)</a></li> --}}
                   {{-- <li tabindex="0">
                     <a>
                       Parent
@@ -63,8 +63,14 @@
 
     </div>
 
-    <div>
+    <div class="flex gap-3 items-center">
+
+        <span class="flex justify-center items-center">
+            <ion-icon name="cart-outline" class="btn bg-slate-900 text-3xl"></ion-icon>
+        </span>
+
         <button class="btn btn-primary">ورود / عضویت</button>
+
     </div>
 
   </div>
